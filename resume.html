@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume builder</title>
+</head>
+<body>
+    <br>
+    <center>
+        <h2 class="head">Resume Builder Open.AI</h2>
+        <h2 class="head2">version 0.2</h2>
+    </center>
+    <br>
+    <center>
+    <button onclick="downloadResume()" class="download-btn">
+        Download Resume
+    </button>
+</center>
+    
+
+    <div class="box">
+        <!--js code-->
+        <script>
+            let a=prompt("Enter your name");
+            let b=prompt("Enter your address");
+            let c=prompt("Enter your phone number");
+            let pt=parseInt(c);
+            let d=prompt("Enter your Email Id");
+             let degree=prompt("Enter your degree");
+            let uni=prompt("Enter your college name");
+            console.log(a);
+            console.log(pt);
+
+            document.write("<h1>Myself: "+a+"</h1>");
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1>Address:"+b+" </h1>");
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1>Phone Number: "+pt+"</h1>");
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1>Email: "+d+"</h1>");
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1>Objective</h1>");
+document.write("<p>To obtain a challenging position in a reputable organization where I can apply my knowledge, enhance my technical and professional skills, and contribute to the growth and success of the organization while continuously learning and improving.</p>");
+document.write("<br>");
+
+            document.write("<h1>Education: </h1>");
+            document.write("<br>");
+
+            document.write("<p>Degree:"+degree+"</p>");
+           
+            document.write("<p> College:"+uni+"</p>");
+        
+            //python java
+            document.write("<h2>Programming Languages</h2>");
+
+let choice = prompt("1) Python\n2) Java\n3) Python, Java\n4) None\nEnter choice");
+
+if(choice==1){
+    document.write("<b>Python</b><br>");
+    document.write("• Proficient in Python programming for developing applications and solving problems.<br>");
+    document.write("• Experienced in writing clean, efficient, and readable Python code.<br><br>");
+}
+else if(choice==2){
+    document.write("<b>Java</b><br>");
+    document.write("• Good knowledge of Java programming and object-oriented concepts.<br>");
+    document.write("• Able to develop console-based and basic web applications using Java.<br><br>");
+}
+else if(choice==3){
+    document.write("<b>Python</b><br>");
+    document.write("• Proficient in Python programming for automation and problem solving.<br>");
+    document.write("• Familiar with data structures and scripting using Python.<br><br>");
+
+    document.write("<b>Java</b><br>");
+    document.write("• Strong understanding of Java and object-oriented programming principles.<br>");
+    document.write("• Capable of developing efficient Java applications and projects.<br><br>");
+}
+else if(choice==4){
+    document.write("No Programming Language Mentioned.<br>");
+    document.write("Currently learning programming concepts and improving technical skills.<br><br>");
+}
+else{
+    alert("Invalid Choice");
+}
+
+            //c,c++
+           document.write("<h2>Additional Programming Skills</h2>");
+
+            let choice1 = prompt("1) C\n2) C++\n3) C, C++\n4) None\nEnter choice");
+
+            if(choice1==1){
+    document.write("<b>C</b><br>");
+    document.write("• Strong understanding of C programming concepts and syntax.<br>");
+    document.write("• Able to develop basic applications using functions, arrays, pointers, and structures.<br><br>");
+}
+else if(choice1==2){
+    document.write("<b>C++</b><br>");
+    document.write("• Good knowledge of C++ programming and object-oriented programming concepts.<br>");
+    document.write("• Capable of developing applications using classes, objects, inheritance, and polymorphism.<br><br>");
+}
+else if(choice1==3){
+    document.write("<b>C</b><br>");
+    document.write("• Strong understanding of C programming concepts and problem-solving techniques.<br>");
+    document.write("• Experienced in developing programs using functions, arrays, pointers, and structures.<br><br>");
+
+    document.write("<b>C++</b><br>");
+    document.write("• Good knowledge of C++ and object-oriented programming principles.<br>");
+    document.write("• Skilled in creating applications using classes, objects, inheritance, and polymorphism.<br><br>");
+}
+else if(choice1==4){
+    document.write("No Additional Programming Skills Mentioned.<br>");
+    document.write("Currently learning new programming languages to enhance technical knowledge.<br><br>");
+}
+else{
+    alert("Invalid Choice");
+}
+
+            //freelancing & web development
+           document.write("<h2>Areas of Interest</h2>");
+
+let choice2 = prompt("1) Freelancing\n2) Web Development\n3) Freelancing & Web Development\n4) None\nEnter choice");
+
+if(choice2==1){
+    document.write("<b>Freelancing</b><br>");
+    document.write("• Interested in providing software and web development services to clients.<br><br>");
+}
+else if(choice2==2){
+    document.write("<b>Web Development</b><br>");
+    document.write("• Passionate about designing and developing responsive and user-friendly websites.<br><br>");
+}
+else if(choice2==3){
+    document.write("<b>Freelancing</b><br>");
+    document.write("• Interested in providing software and web development services to clients.<br><br>");
+
+    document.write("<b>Web Development</b><br>");
+    document.write("• Passionate about designing and developing responsive and user-friendly websites.<br><br>");
+}
+else if(choice2==4){
+    document.write("No Area of Interest Mentioned.<br><br>");
+}
+else{
+    alert("Invalid Choice");
+}
+
+            let pro4=prompt("Enter your other languages in which you are skilled");
+           document.write("<h2>Languages Known</h2>");
+            document.write("<p>"+pro4+"</p>");
+            
+           
+            
+document.write("<h2>Projects</h2>");
+
+let n = prompt("Enter the number of projects");
+
+for(let i=1;i<=n;i++){
+
+    let pro = prompt("Enter Project Name");
+
+    let content = prompt("Enter Project Description");
+
+    document.write("<h3>Project "+i+": "+pro+"</h3>");
+    document.write(content);
+    document.write("<br><br>");
+}
+      document.write("<h2>Achievements</h2>");
+
+let ach = prompt("How many achievements do you have?");
+
+for(let i=1;i<=ach;i++){
+
+    let achievement = prompt("Enter Achievement "+i);
+
+    document.write("• "+achievement+"<br>");
+}
+
+document.write("<br>"); 
+function downloadResume() {
+    window.print();
+}   
+    
+            
+        </script>
+    </div>
+    <style>
+      body{
+    background: linear-gradient(to right,#74ebd5,#ACB6E5);
+    font-family: Arial, sans-serif;
+    margin:30px;
+}
+
+.box{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+.head{
+    color:#0d47a1;
+    font-size:38px;
+    text-align:center;
+}
+
+.head2{
+    color:#555;
+    font-size:20px;
+    text-align:center;
+}
+
+h1{
+    color:#1565c0;
+    font-size:22px;
+    margin-top:15px;
+}
+
+h2{
+    color:#0d47a1;
+    border-bottom:2px solid #1565c0;
+    margin-top:22px;
+    margin-bottom:10px;
+}
+
+h3{
+    color:#444;
+}
+
+p{
+    font-size:18px;
+    line-height:1.7;
+}
+h1{
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    color:#222;
+}
+
+h1::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:white;
+    animation:writing 3s steps(30) forwards;
+}
+.download-btn{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:18px;
+    border-radius:6px;
+    cursor:pointer;
+    margin:20px;
+}
+
+.download-btn:hover{
+    background:#0d47a1;
+}
+
+@media print{
+
+    .download-btn{
+        display:none;
+    }
+
+    body{
+        background:white;
+    }
+
+    .box{
+        box-shadow:none;
+        border:none;
+    }
+}
+@keyframes writing{
+            to{
+                width:0%;
+            }
+        }
+        @keyframes blink{
+            40%{
+                color:transparent;
+            }
+        }
+    </style>
+</body>
+</html>
